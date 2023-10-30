@@ -4,7 +4,7 @@ The goal of this project is to extend the project from Smith et al. by fixing so
 
 # Reference
 
-This project is just a fixed and improved version of this [project] (https://github.com/AmosZhu/CVPR2019):
+This project is just a fixed and improved version of this [project](https://github.com/AmosZhu/CVPR2019):
 
 @inproceedings{zhu2019depth,
   title={Depth from a polarisation + RGB stereo pair},
