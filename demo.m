@@ -97,15 +97,6 @@ function [py_normals_hfpol, py_normals_propagation, py_normals_lambertian] = com
     [hx, hy, hz] = surfnorm(propagation_height);
     py_normals_propagation = cat(3, hx, hy, hz);
 
-    %% Plotting
-
-    % plot_height_data(hfpol_height);
-    % plot_height_data(propagation_height);
-
-    % figure;
-    % surf(propagation_height, 'EdgeColor', 'none', 'FaceColor', [0 0 1], 'FaceLighting', ...
-    %     'gouraud', 'AmbientStrength', 0, 'DiffuseStrength', 1); axis equal; light
-
 end
 
 % function [] = plot_height_data(height_data)
@@ -113,12 +104,3 @@ end
 %     surf(height_data, 'EdgeColor', 'none', 'FaceColor', [0 0 1], 'FaceLighting', ...
 %         'gouraud', 'AmbientStrength', 0, 'DiffuseStrength', 1); axis equal; light
 % end
-
-%% LambertianSFP:
-
-% ones matrix created as default 1s albedol
-% albedo = ones(size(Iun_est)) * 0.4019;  albedo = ones(size(Iun_est)); albedo = ones(size(Iun_est)) * 0.5;
-%disp('Starting LambertianSFP:')
-%[~, h] = LambertianSFP(rho_est, phi_est, mask, n, s, mask, Iun_est);
-% LambertianSFP(rho_est_combined, phi_est_combined, mask, n, s + [0.001; 0; 0], albedo, Iun_est);
-%surf(LambertianHeight, 'EdgeColor', 'none', 'FaceColor', [0 0 1], 'FaceLighting', 'gouraud', 'AmbientStrength', 0, 'DiffuseStrength', 1); axis equal; light
